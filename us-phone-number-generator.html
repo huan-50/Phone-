@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3b5998">
+    <meta name="description" content="Generate random US phone numbers for testing and verification.">
+    <title>US Phone Number Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="./" title="Phone Number Generator">Phone Number Generator</a>
+            </h1>
+            <div class="country-list">
+                <a href="./" title="Phone Number Generator">Home</a>
+                <a href="china-phone-number-generator.html" title="China Phone Number Generator">China</a>
+                <a href="india-phone-number-generator.html" title="India Phone Number Generator">India</a>
+                <a href="us-phone-number-generator.html" title="US Phone Number Generator">US</a>
+                <!-- Add other country links as needed -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="us-section">
+            <h2>Generate US Phone Number</h2>
+            <p>Click the button below to generate a random US phone number.</p>
+            <button onclick="displayPhoneNumber('us')" class="button">Generate Number</button>
+            <div id="us-result" class="result"></div>
+        </section>
+    </main>
+    <footer>
+        Copyright 2025 &copy; <a href="./" style="color:#333;">Phone Number Generator</a>. All rights reserved.
+    </footer>
+    <script src="phone-number-generator.js"></script>
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            const phoneNumber = generatePhoneNumber('us');
+            document.getElementById('us-result').innerHTML = phoneNumber;
+        });
+    </script>
+</body>
+</html> 
