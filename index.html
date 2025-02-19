@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3b5998">
+    <meta name="description" content="Easily generate random Chinese phone numbers for testing, verification, and other purposes. Authentic format with comprehensive coverage across China.">
+    <title>China Phone Number Generator - Generate Authentic & Random Chinese Numbers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="./" title="Phone Number Generator">Phone Number Generator</a>
+            </h1>
+
+            <div class="country-list">
+                <a class="curr" href="./" title="Phone Number Generator">Home</a>
+                <a href="china-phone-number-generator.html" title="China Phone Number Generator">China</a>
+                <a href="india-phone-number-generator.html" title="India Phone Number Generator">India</a>
+                <a href="us-phone-number-generator.html" title="US Phone Number Generator">US</a>
+                <a href="indonesia-phone-number-generator.html" title="Indonesia Phone Number Generator">Indonesia</a>
+                <a href="brazil-phone-number-generator.html" title="Brazil Phone Number Generator">Brazil</a>
+                <a href="pakistan-phone-number-generator.html" title="Pakistan Phone Number Generator">Pakistan</a>
+                <a href="nigeria-phone-number-generator.html" title="Nigeria Phone Number Generator">Nigeria</a>
+                <a href="bangladesh-phone-number-generator.html" title="Bangladesh Phone Number Generator">Bangladesh</a>
+                <a href="russia-phone-number-generator.html" title="Russia Phone Number Generator">Russia</a>
+                <a href="japan-phone-number-generator.html" title="Japan Phone Number Generator">Japan</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="china-section">
+            <h2>Generate China Phone Number</h2>
+            <p style="margin-top: 5px;">Note: These numbers are randomly generated and may not be valid for actual use.</p>
+            <button onclick="displayPhoneNumber('china')" id="generateButton" class="button">Generate Phone Number</button>
+            <div id="china-result" class="result number-display" style="margin-top:10px"></div>
+            <div id="errorDisplay" class="error-display"></div>
+
+            <div class="format-info">
+                <h3>China Phone Number Format</h3>
+                <p>The standard format for Chinese phone numbers is 1xx-xxxx-xxxx, where '1' is always the prefix, followed by a 2-digit operator code and then an 8-digit user number.</p>
+
+                <h3>Major Mobile Operators in China</h3>
+                <ul>
+                    <li>China Mobile: Starting with 134, 135, 136, etc.</li>
+                    <li>China Unicom: Starting with 130, 131, 132, etc.</li>
+                    <li>China Telecom: Starting with 133, 149, etc.</li>
+                </ul>
+
+                <h3>China's Virtual Phone Number Providers</h3>
+                <p>In addition to the traditional operators, there are many virtual phone number providers in China offering services for business and private use.</p>
+            </div>
+        </section>
+        <section id="india-section">
+            <h2><a href="india-phone-number-generator.html" title="India Phone Number Generator">India Phone Number Generator</a></h2>
+            <p>Generate phone numbers in the format of India. Click the button below to generate an Indian phone number.</p>
+            <button onclick="displayPhoneNumber('india')" class="button">Generate Number</button>
+            <div id="india-result" class="result"></div>
+        </section>
+        <!-- Add more sections for other countries as needed -->
+    </main>
+    <footer>
+        Copyright 2025 &copy; <a href="./" style="color:#333;">Phone Number Generator</a>. All rights reserved.
+    </footer>
+    <script src="phone-number-generator.js"></script>
+    <script>
+        document.getElementById('generateButton').addEventListener('click', function() {
+            try {
+                const phoneNumber = generatePhoneNumber('china');
+                document.getElementById('china-result').innerHTML += phoneNumber + '<br />';
+                document.getElementById('errorDisplay').innerHTML = '';
+            } catch (error) {
+                document.getElementById('errorDisplay').innerHTML = 'Failed to generate number. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>
