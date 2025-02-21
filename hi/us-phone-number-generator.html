@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3b5998">
+    <meta name="description" content="Generate random US phone numbers for testing and verification.">
+    <title>US Phone Number Generator</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q20B547MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1Q20B547MR');
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="./" title="Phone Number Generator">Phone Number Generator</a>
+            </h1>
+            <div class="country-list">
+                <a class="curr" href="./" title="फ़ोन नंबर जनरेटर">होम</a>
+                <a href="./china-phone-number-generator.html" title="चीन फ़ोन नंबर जनरेटर">चीन</a>
+                <a href="./india-phone-number-generator.html" title="भारत फ़ोन नंबर जनरेटर">भारत</a>
+                <a href="./us-phone-number-generator.html" title="अमेरिका फ़ोन नंबर जनरेटर">अमेरिका</a>
+                <a href="./indonesia-phone-number-generator.html" title="इंडोनेशिया फ़ोन नंबर जनरेटर">इंडोनेशिया</a>
+                <a href="./brazil-phone-number-generator.html" title="ब्राज़ील फ़ोन नंबर जनरेटर">ब्राज़ील</a>
+                <a href="./pakistan-phone-number-generator.html" title="पाकिस्तान फ़ोन नंबर जनरेटर">पाकिस्तान</a>
+                <a href="./nigeria-phone-number-generator.html" title="नाइजीरिया फ़ोन नंबर जनरेटर">नाइजीरिया</a>
+                <a href="./bangladesh-phone-number-generator.html" title="बांग्लादेश फ़ोन नंबर जनरेटर">बांग्लादेश</a>
+                <a href="./russia-phone-number-generator.html" title="रूस फ़ोन नंबर जनरेटर">रूस</a>
+                <a href="./japan-phone-number-generator.html" title="जापान फ़ोन नंबर जनरेटर">जापान</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="us-section">
+            <h2>Generate US Phone Number</h2>
+            <p>Click the button below to generate a random US phone number.</p>
+            <button onclick="displayPhoneNumber('us')" class="button">Generate Number</button>
+            <div id="us-result" class="result"></div>
+        </section>
+    </main>
+    <footer>
+        Copyright 2025 &copy; <a href="./" style="color:#333;">Phone Number Generator</a>. All rights reserved.
+    </footer>
+    <script src="phone-number-generator.js"></script>
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            const phoneNumber = generatePhoneNumber('us');
+            document.getElementById('us-result').innerHTML = phoneNumber;
+        });
+    </script>
+</body>
+</html> 

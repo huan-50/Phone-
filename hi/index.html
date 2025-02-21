@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3b5998">
+    <meta name="description" content="चीन,भारत,अमेरिका,इंडोनेशिया,ब्राज़ील,पाकिस्तान,नाइजीरिया,बांग्लादेश,रूस,जापान जैसे प्रमुख देशों के लिए आसानी से फ़ोन नंबर जनरेट करें। फ़ोन नंबर जनरेटर, टेस्टिंग, वेरिफिकेशन और विभिन्न एप्लिकेशन के लिए एकदम सही।">
+    <title>फ़ोन नंबर जनरेटर,चीन,भारत,अमेरिका,इंडोनेशिया,ब्राज़ील,पाकिस्तान,नाइजीरिया,बांग्लादेश,रूस,जापान</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q20B547MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1Q20B547MR');
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="../hi/" title="Phone Number Generator">Phone Number Generator</a>
+            </h1>
+            <div class="language-list">
+                <a href="../" title="English">English</a>
+                <a class="curr" href="./" title="हिन्दी">हिन्दी</a>
+                <a href="../tl/" title="Filipino">Filipino</a>
+            </div>
+            <div class="country-list">
+                <a class="curr" href="./" title="फ़ोन नंबर जनरेटर">होम</a>
+                <a href="./china-phone-number-generator.html" title="चीन फ़ोन नंबर जनरेटर">चीन</a>
+                <a href="./india-phone-number-generator.html" title="भारत फ़ोन नंबर जनरेटर">भारत</a>
+                <a href="./us-phone-number-generator.html" title="अमेरिका फ़ोन नंबर जनरेटर">अमेरिका</a>
+                <a href="./indonesia-phone-number-generator.html" title="इंडोनेशिया फ़ोन नंबर जनरेटर">इंडोनेशिया</a>
+                <a href="./brazil-phone-number-generator.html" title="ब्राज़ील फ़ोन नंबर जनरेटर">ब्राज़ील</a>
+                <a href="./pakistan-phone-number-generator.html" title="पाकिस्तान फ़ोन नंबर जनरेटर">पाकिस्तान</a>
+                <a href="./nigeria-phone-number-generator.html" title="नाइजीरिया फ़ोन नंबर जनरेटर">नाइजीरिया</a>
+                <a href="./bangladesh-phone-number-generator.html" title="बांग्लादेश फ़ोन नंबर जनरेटर">बांग्लादेश</a>
+                <a href="./russia-phone-number-generator.html" title="रूस फ़ोन नंबर जनरेटर">रूस</a>
+                <a href="./japan-phone-number-generator.html" title="जापान फ़ोन नंबर जनरेटर">जापान</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2><a href="./china-phone-number-generator.html" title="चीन फ़ोन नंबर जनरेटर">चीन फ़ोन नंबर जनरेटर</a></h2>
+            <p>हमारे टूल से मान्य चीन फ़ोन नंबर जनरेट करें। विभिन्न एप्लिकेशन और टेस्ट के लिए एकदम सही।</p>
+            <a href="./china-phone-number-generator.html" title="चीन फ़ोन नंबर जनरेट करें">
+                <button>चीन फ़ोन नंबर जनरेट करें</button>
+            </a>
+        </section>
+        <section id="india-section">
+            <h2><a href="india-phone-number-generator.html" title="India Phone Number Generator">India Phone Number Generator</a></h2>
+            <p>Generate phone numbers in the format of India. Click the button below to generate an Indian phone number.</p>
+            <button onclick="displayPhoneNumber('india')" class="button">Generate Number</button>
+            <div id="india-result" class="result"></div>
+        </section>
+        <!-- Add more sections for other countries as needed -->
+    </main>
+    <footer>
+        Copyright 2025 &copy; <a href="./" style="color:#333;">Phone Number Generator</a>. All rights reserved.
+    </footer>
+    <script src="phone-number-generator.js"></script>
+    <script>
+        document.getElementById('generateButton').addEventListener('click', function() {
+            try {
+                const phoneNumber = generatePhoneNumber('china');
+                document.getElementById('china-result').innerHTML += phoneNumber + '<br />';
+                document.getElementById('errorDisplay').innerHTML = '';
+            } catch (error) {
+                document.getElementById('errorDisplay').innerHTML = 'Failed to generate number. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>
