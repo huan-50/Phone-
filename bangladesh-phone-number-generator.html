@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3b5998">
+    <meta name="description" content="Generate random Bangladeshi phone numbers for testing and verification. Authentic format with comprehensive coverage across Bangladesh.">
+    <title>Bangladesh Phone Number Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q20B547MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1Q20B547MR');
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="./" title="Phone Number Generator">Phone Number Generator</a>
+            </h1>
+            <div class="country-list">
+                <a href="./" title="Phone Number Generator">Home</a>
+                <a href="china-phone-number-generator.html" title="China Phone Number Generator">China</a>
+                <a href="india-phone-number-generator.html" title="India Phone Number Generator">India</a>
+                <a href="us-phone-number-generator.html" title="US Phone Number Generator">US</a>
+                <a href="indonesia-phone-number-generator.html" title="Indonesia Phone Number Generator">Indonesia</a>
+                <a href="brazil-phone-number-generator.html" title="Brazil Phone Number Generator">Brazil</a>
+                <a href="nigeria-phone-number-generator.html" title="Nigeria Phone Number Generator">Nigeria</a>
+                <a href="bangladesh-phone-number-generator.html" title="Bangladesh Phone Number Generator" class="curr">Bangladesh</a>
+                <!-- Add other country links as needed -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="bangladesh-section">
+            <h2>Generate Bangladesh Phone Number</h2>
+            <button id="generateButton" class="button">Generate Number</button>
+            <div id="bangladesh-result" class="result"></div>
+
+            <div class="format-info">
+                <h3>Bangladesh Phone Number Format</h3>
+                <p>Bangladeshi mobile numbers follow the format: +880 (country code) followed by a 10-digit number starting with 1.</p>
+
+                <h3>Major Mobile Operators in Bangladesh</h3>
+                <ul>
+                    <li>Grameenphone: Numbers starting with 017, 018, etc.</li>
+                    <li>Airtel: Numbers starting with 016, etc.</li>
+                    <li>Robi: Numbers starting with 019, etc.</li>
+                    <li>Banglalink: Numbers starting with 014, etc.</li>
+                </ul>
+
+                <h3>Note on Usage</h3>
+                <p>These numbers are randomly generated for testing purposes only and may not be valid for actual use.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright 2025 &copy; <a href="./" style="color:#333;">Phone Number Generator</a>. All rights reserved.
+    </footer>
+    <script src="phone-number-generator.js"></script>
+    <script>
+        document.getElementById('generateButton').addEventListener('click', function() {
+            try {
+                const phoneNumber = generatePhoneNumber('bangladesh');
+                document.getElementById('bangladesh-result').innerHTML = phoneNumber;
+            } catch (error) {
+                console.error('Error generating phone number:', error);
+                document.getElementById('bangladesh-result').innerHTML = 'Error generating number. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>
